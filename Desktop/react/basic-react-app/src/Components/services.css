@@ -1,0 +1,44 @@
+.services-outer{
+    margin-top: 100px;
+    background-color: #fcf3f0;
+    padding: 10px;
+    color: #221f1d;
+    align-items: center;
+    font-size: 1.2rem;
+   padding-top: 50px;
+}
+.image1{
+    width: 80%;
+    align-self: center;
+    align-content: center;
+
+}
+.image2{
+    width: 80%;
+
+}
+.image3{
+    width: 80%;
+
+}
+.image4{
+    width: 80%;
+
+}
+.services-1{
+    display: flex;
+    font-size: 1.2rem;
+    
+}
+
+.services-inner{
+    margin: 10px;
+    padding: 60px;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+.services-upper{
+    margin: 10px;
+    padding: 30px;
+    line-height: 2;
+}

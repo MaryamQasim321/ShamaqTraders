@@ -1,0 +1,43 @@
+
+/* Main content styles */
+.main-div {
+    display: flex;
+    background-color: #fcf3f0;
+    margin-top: 100px; /* Adjust margin to account for the height of the navbar */
+    right: 100px;
+    margin-left: 200px;
+}
+
+.main-outer-div1 {
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-items: left;
+    right: 0;
+}
+.main-outer-div2{
+    display: flex;
+    line-height: 2;
+    padding: 30px;
+    flex-direction: row;
+    padding-top: 100px;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-items: left;
+    right: 0;
+}
+
+.image-class {
+    width: 70%;
+}
+.image-class2{
+    width: 50%;
+}
+.main-inner-div2{
+    padding: 60px;
+}

@@ -1,0 +1,45 @@
+.category-menu{
+    font-size: 0.5rem;
+   border-radius: 20px;
+   border-top-left-radius: 0;
+    border: 3px solid  #1a0a07;
+    padding: 10px;
+    height: 800px;
+    background-color: #1a0a07;
+    color: #fcf3f0;
+    border-bottom: 0;
+
+}
+.category-heading a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the color from the parent h1 */
+   
+    cursor: hand;
+  }
+  .category-heading a:hover {
+    color: #814141; 
+    text-decoration: underline;
+  }
+ul{
+    color: #fcf3f0;
+}
+
+.category-heading{
+    color: #fcf3f0;
+}
+.category-arrow{
+    padding: 20px;
+    font-size: 10px;
+}
+.category-arrow-down{
+font-size: 50px;
+}
+li{
+    color: #fcf3f0;
+}
+Link{
+    color: #fcf3f0;
+}
+h1{
+    color: blue;
+}

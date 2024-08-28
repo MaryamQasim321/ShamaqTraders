@@ -1,0 +1,16 @@
+.cart-outer{
+    top: 500px;
+color: #1a0a07;
+    left: 500px;
+  padding-left: 150px;
+    width: 100px;
+    padding-top: 100px;
+}
+
+.cart-items-outer{
+  color: #1a0a07;
+}
+
+li{
+  color: #1a0a07;
+}

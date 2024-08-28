@@ -1,0 +1,99 @@
+.hamburger-menu {
+  position: fixed; /* Keep the navbar fixed at the top */
+  background-color: #fcf3f0;
+  display: flex;
+  justify-content: space-between; /* Space between logo/title and the menu items */
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  color: #221f1d;
+  z-index: 1000; /* Ensure it is above other content */
+
+}
+
+.menu-button {
+  font-size: 25px;
+  color: #803737;
+  cursor: pointer;
+  background: none;
+  border: none; /* Remove any default button borders */
+  margin-left: 20px; /* Add margin for spacing */
+}
+
+.nav-links {
+  position: fixed;
+  top: 100px; /* Ensure it appears just below the navbar */
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a0a07;
+  font-size: 50px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the links */
+  justify-content: center; /* Vertically center the links */
+}
+
+.nav-links.open {
+  opacity: 1;
+  font-size: 50px;
+  max-height: 100vh;
+}
+
+.nav-links a {
+  padding: 15px;
+  text-decoration: none;
+  color: #ded7d1;
+  font-size: 24px; /* Slightly smaller font size for better spacing */
+  transition: color 0.3s ease; /* Smooth color transition */
+  font-size: 35px;
+}
+
+.nav-links a:hover {
+  color: #814141;
+  font-size: 45px;
+  text-decoration: underline;
+}
+
+h1 {
+  padding-left: 50px;
+  color: #1a0a07;
+  margin: 0; /* Remove default margin */
+}
+
+#cart-icon {
+  font-size: 28px;
+  color: #814141;
+  margin-right: 20px;
+  cursor: pointer; /* Make the cart icon clickable */
+}
+
+.cart-div {
+  display: flex; /* Ensure cart and menu button align horizontally */
+  align-items: center;
+}
+
+.category-div {
+  position: absolute;
+  top: 100px; /* Position it below the navbar */
+
+  z-index: 999; /* Keep it above other content but below the navbar */
+}
+
+.category-hamburger-menu {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #fcf3f0;
+}
+
+.category-hamburger-menu h3 {
+  
+  color: #221f1d;
+}
