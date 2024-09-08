@@ -1,19 +1,32 @@
-const initData=require('./categoryData.js')
 const mongoose = require('mongoose');
-const categories = require("../Models/category");
+const Category = require("../Models/category");
 
-main().catch(err => console.log(err));
+async function initCategories() {
+  try {
+      await mongoose.connect('mongodb://127.0.0.1:27017/shamaqtraders', {
+          useNewUrlParser: true,
+          useUnifiedTopology: true,
+      });
 
-async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/shamaqtraders');
+      // Delete existing categories if necessary
+      await Category.deleteMany({});
+
+      // Define initial categories
+      const categoriesList = [
+          { _id: new mongoose.Types.ObjectId(), name: 'Wallets' },
+          { _id: new mongoose.Types.ObjectId(), name: 'Clothing' },
+          { _id: new mongoose.Types.ObjectId(), name: 'Footwear' },
+          { _id: new mongoose.Types.ObjectId(), name: 'Accessories' },
+      ];
+
+      // Insert categories into the database
+      await Category.insertMany(categoriesList);
+      console.log("Categories data initialized");
+  } catch (err) {
+      console.error('Error:', err);
+  } finally {
+      mongoose.connection.close();
+  }
 }
 
-
-const initDB=async()=>{
-    await categories.deleteMany({});
-    await categories.insertMany(initData);
-    console.log("data initialized")
-}
-
-initDB();
-
+module.exports = initCategories;
