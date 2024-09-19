@@ -49,12 +49,7 @@ const CategoryMenu = () => {
 
   return (
     <div className='category-menu'>
-      {error && (
-        <div className='error-message'>
-          <p>{error.message}</p>
-          <pre>{error.stack}</pre> {/* Display the stack trace */}
-        </div>
-      )}
+      {error && console.log(error.stack)}
       {categories.map(category => {
         const categoryProducts = products.filter(product => product.categoryId === category._id); // Ensure correct ID field
 
