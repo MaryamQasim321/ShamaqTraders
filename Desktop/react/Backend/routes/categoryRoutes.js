@@ -50,7 +50,7 @@ router.get('/products', async (req, res) => {
     }
   
     try {
-      const products = await Product.find({ categoryId: mongoose.Types.ObjectId(categoryId) });
+      const products = await Product.find({ categoryId: new mongoose.Types.ObjectId(categoryId) });
   
       if (products.length === 0) {
         return res.status(404).json({ message: 'No products found for this category' });
